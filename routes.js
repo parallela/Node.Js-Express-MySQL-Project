@@ -3,10 +3,10 @@ var app = express();
 
 // Defining all the routes
 var index = require('./routes/index');
-var users = require('./routes/users');
+var notes = require('./routes/notes');
 
 // Linking all the routes
 app.use('/', index);
-app.use('/users', users);
+app.use('/notes', notes);
 
 module.exports = app;
